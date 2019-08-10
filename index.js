@@ -4,7 +4,7 @@ const port = 3000
 const todoRoutes = require('./routes/todos')
 
 app.get('/', function (req, res) {
-  res.send('Hi there from express')
+  res.send('Hello from root route')
 })
 
 // use the routes and define a prefix for all
