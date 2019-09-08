@@ -8,6 +8,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: true }))
 // use the routes and define a prefix for all
 app.use(express.static(__dirname + '/views'))
+app.use(express.static(__dirname + '/public'))
 app.use('/api/todos', todoRoutes)
 
 app.get('/', function (req, res) {
